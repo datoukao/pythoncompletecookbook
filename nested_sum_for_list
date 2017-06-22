@@ -1,0 +1,18 @@
+def nested_sum(t):
+    """Computes the total of all numbers in a list of lists.
+   
+    t: list of list of numbers
+
+    returns: number
+    """
+    total = 0
+    for nested in t:
+        total += sum(nested)
+    return total
+
+def main():
+    t = [[1, 2], [3], [4, 5, 6]]
+    print(nested_sum(t))
+
+if __name__ == '__main__':
+    main()
